@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61606514866600981B4A09BA /* Pods_FlixStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B059986F6DB32755BDCE4568 /* Pods_FlixStar.framework */; };
 		FCA74DEF251CEBA100F9DA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */; };
 		FCA74DF1251CEBA100F9DA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */; };
 		FCA74DF6251CEBA100F9DA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA74DF4251CEBA100F9DA3F /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40526F361FCB5776605161AE /* Pods-FlixStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixStar.debug.xcconfig"; path = "Target Support Files/Pods-FlixStar/Pods-FlixStar.debug.xcconfig"; sourceTree = "<group>"; };
+		B059986F6DB32755BDCE4568 /* Pods_FlixStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78D4C1E624F294AD024BE31 /* Pods-FlixStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixStar.release.xcconfig"; path = "Target Support Files/Pods-FlixStar/Pods-FlixStar.release.xcconfig"; sourceTree = "<group>"; };
 		FCA74DEB251CEBA100F9DA3F /* FlixStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61606514866600981B4A09BA /* Pods_FlixStar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1C0D4E3245CAEA1E3E33A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B059986F6DB32755BDCE4568 /* Pods_FlixStar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81D0447EB60A82B4428FE295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40526F361FCB5776605161AE /* Pods-FlixStar.debug.xcconfig */,
+				D78D4C1E624F294AD024BE31 /* Pods-FlixStar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FCA74DE2251CEBA100F9DA3F = {
 			isa = PBXGroup;
 			children = (
 				FCA74DED251CEBA100F9DA3F /* FlixStar */,
 				FCA74DEC251CEBA100F9DA3F /* Products */,
+				81D0447EB60A82B4428FE295 /* Pods */,
+				0B1C0D4E3245CAEA1E3E33A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA74DFF251CEBA300F9DA3F /* Build configuration list for PBXNativeTarget "FlixStar" */;
 			buildPhases = (
+				46069C7D330D75800D8110DF /* [CP] Check Pods Manifest.lock */,
 				FCA74DE7251CEBA100F9DA3F /* Sources */,
 				FCA74DE8251CEBA100F9DA3F /* Frameworks */,
 				FCA74DE9251CEBA100F9DA3F /* Resources */,
+				F625E8130E4109CD06B3FFBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46069C7D330D75800D8110DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixStar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F625E8130E4109CD06B3FFBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixStar/Pods-FlixStar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixStar/Pods-FlixStar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixStar/Pods-FlixStar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCA74DE7251CEBA100F9DA3F /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		FCA74E00251CEBA300F9DA3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40526F361FCB5776605161AE /* Pods-FlixStar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		FCA74E01251CEBA300F9DA3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78D4C1E624F294AD024BE31 /* Pods-FlixStar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
