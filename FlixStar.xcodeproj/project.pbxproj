@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FCA74DEF251CEBA100F9DA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */; };
 		FCA74DF1251CEBA100F9DA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */; };
-		FCA74DF3251CEBA100F9DA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DF2251CEBA100F9DA3F /* ViewController.swift */; };
 		FCA74DF6251CEBA100F9DA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA74DF4251CEBA100F9DA3F /* Main.storyboard */; };
 		FCA74DF8251CEBA300F9DA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA74DF7251CEBA300F9DA3F /* Assets.xcassets */; };
 		FCA74DFB251CEBA300F9DA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA74DF9251CEBA300F9DA3F /* LaunchScreen.storyboard */; };
+		FCA74E03251CEC6100F9DA3F /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74E02251CEC6100F9DA3F /* MovieViewController.swift */; };
+		FCA74E05251CEEDA00F9DA3F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74E04251CEEDA00F9DA3F /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCA74DEB251CEBA100F9DA3F /* FlixStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCA74DF2251CEBA100F9DA3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCA74DF5251CEBA100F9DA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCA74DF7251CEBA300F9DA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA74DFA251CEBA300F9DA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA74DFC251CEBA300F9DA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA74E02251CEC6100F9DA3F /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		FCA74E04251CEEDA00F9DA3F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */,
 				FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */,
-				FCA74DF2251CEBA100F9DA3F /* ViewController.swift */,
 				FCA74DF4251CEBA100F9DA3F /* Main.storyboard */,
+				FCA74E04251CEEDA00F9DA3F /* MovieCell.swift */,
+				FCA74E02251CEC6100F9DA3F /* MovieViewController.swift */,
 				FCA74DF7251CEBA300F9DA3F /* Assets.xcassets */,
 				FCA74DF9251CEBA300F9DA3F /* LaunchScreen.storyboard */,
 				FCA74DFC251CEBA300F9DA3F /* Info.plist */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA74DF3251CEBA100F9DA3F /* ViewController.swift in Sources */,
 				FCA74DEF251CEBA100F9DA3F /* AppDelegate.swift in Sources */,
 				FCA74DF1251CEBA100F9DA3F /* SceneDelegate.swift in Sources */,
+				FCA74E05251CEEDA00F9DA3F /* MovieCell.swift in Sources */,
+				FCA74E03251CEC6100F9DA3F /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
