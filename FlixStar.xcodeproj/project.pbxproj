@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		61606514866600981B4A09BA /* Pods_FlixStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B059986F6DB32755BDCE4568 /* Pods_FlixStar.framework */; };
+		FC554F0325292AB900B0457F /* MoviewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC554F0225292AB900B0457F /* MoviewDetailsViewController.swift */; };
 		FCA74DEF251CEBA100F9DA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */; };
 		FCA74DF1251CEBA100F9DA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */; };
 		FCA74DF6251CEBA100F9DA3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA74DF4251CEBA100F9DA3F /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		40526F361FCB5776605161AE /* Pods-FlixStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixStar.debug.xcconfig"; path = "Target Support Files/Pods-FlixStar/Pods-FlixStar.debug.xcconfig"; sourceTree = "<group>"; };
 		B059986F6DB32755BDCE4568 /* Pods_FlixStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78D4C1E624F294AD024BE31 /* Pods-FlixStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixStar.release.xcconfig"; path = "Target Support Files/Pods-FlixStar/Pods-FlixStar.release.xcconfig"; sourceTree = "<group>"; };
+		FC554F0225292AB900B0457F /* MoviewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewDetailsViewController.swift; sourceTree = "<group>"; };
 		FCA74DEB251CEBA100F9DA3F /* FlixStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA74DEE251CEBA100F9DA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				40526F361FCB5776605161AE /* Pods-FlixStar.debug.xcconfig */,
 				D78D4C1E624F294AD024BE31 /* Pods-FlixStar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +88,7 @@
 				FCA74DF0251CEBA100F9DA3F /* SceneDelegate.swift */,
 				FCA74DF4251CEBA100F9DA3F /* Main.storyboard */,
 				FCA74E04251CEEDA00F9DA3F /* MovieCell.swift */,
+				FC554F0225292AB900B0457F /* MoviewDetailsViewController.swift */,
 				FCA74E02251CEC6100F9DA3F /* MovieViewController.swift */,
 				FCA74DF7251CEBA300F9DA3F /* Assets.xcassets */,
 				FCA74DF9251CEBA300F9DA3F /* LaunchScreen.storyboard */,
@@ -212,6 +214,7 @@
 			files = (
 				FCA74DEF251CEBA100F9DA3F /* AppDelegate.swift in Sources */,
 				FCA74DF1251CEBA100F9DA3F /* SceneDelegate.swift in Sources */,
+				FC554F0325292AB900B0457F /* MoviewDetailsViewController.swift in Sources */,
 				FCA74E05251CEEDA00F9DA3F /* MovieCell.swift in Sources */,
 				FCA74E03251CEC6100F9DA3F /* MovieViewController.swift in Sources */,
 			);
