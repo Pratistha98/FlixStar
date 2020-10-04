@@ -9,6 +9,9 @@
 import UIKit
 
 class MovieGridViewController: UIViewController {
+    
+    @IBOutlet var collectionView: UICollectionView!
+    
     var movies = [[String:Any]]()
     override func viewDidLoad() {
         super.viewDidLoad()

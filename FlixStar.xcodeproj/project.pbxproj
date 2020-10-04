@@ -94,11 +94,11 @@
 				FCA74E04251CEEDA00F9DA3F /* MovieCell.swift */,
 				FC554F0225292AB900B0457F /* MoviewDetailsViewController.swift */,
 				FC554F042529595E00B0457F /* MovieGridViewController.swift */,
+				FC554F082529613500B0457F /* MovieGridCell.swift */,
 				FCA74E02251CEC6100F9DA3F /* MovieViewController.swift */,
 				FCA74DF7251CEBA300F9DA3F /* Assets.xcassets */,
 				FCA74DF9251CEBA300F9DA3F /* LaunchScreen.storyboard */,
 				FCA74DFC251CEBA300F9DA3F /* Info.plist */,
-				FC554F082529613500B0457F /* MovieGridCell.swift */,
 			);
 			path = FlixStar;
 			sourceTree = "<group>";

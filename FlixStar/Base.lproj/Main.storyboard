@@ -155,10 +155,16 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="157" height="206"/>
+                                <connections>
+                                    <outlet property="posterView" destination="iqs-DG-Ldv" id="nRs-om-DF7"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
                     <navigationItem key="navigationItem" title="SuperHero" id="nUI-g6-pp2"/>
+                    <connections>
+                        <outlet property="collectionView" destination="mmK-kJ-eHa" id="SGK-Q9-59f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlJ-fY-1N1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
