@@ -11,7 +11,8 @@
 - [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
-http://g.recordit.co/xR8FuSmu9z.gif
+<img src="http://g.recordit.co/xR8FuSmu9z.gif" width=250><br>
+
 
 <img src="YOUR_GIF_URL_HERE" width=250><br>
 
