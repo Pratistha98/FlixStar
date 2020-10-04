@@ -14,8 +14,6 @@
 <img src="http://g.recordit.co/xR8FuSmu9z.gif" width=250><br>
 
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
-
 ### Notes
 One of the challenges was fixing the colleciton view cell. This project gave me a better idea on how collection view cells works
 
